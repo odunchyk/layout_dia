@@ -1,0 +1,46 @@
+.who-we-are {
+  margin-inline: auto;
+  padding-block: 120px;
+
+  @include padding-inline;
+
+  @include on-tablet {
+    padding-block: 148px;
+  }
+
+  &__title {
+    margin-bottom: 24px;
+
+    font-family: Poppins, sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 48px;
+    text-align: center;
+    color: $main-title-color;
+
+    @include on-tablet {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 33px;
+    text-align: center;
+    color: $main-text-color;
+
+    @include on-tablet {
+      line-height: 36px;
+    }
+
+    &--line-break {
+      display: none;
+
+      @include on-desktop-small {
+        display: inline;
+      }
+    }
+  }
+}

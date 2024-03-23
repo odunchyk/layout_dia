@@ -1,0 +1,129 @@
+.header {
+  position: relative;
+  background-color: $header-background-color;
+  border-radius: 0 0 30px 30px;
+
+  @include padding-inline;
+
+  &__main {
+    @include page-grid;
+
+    padding-bottom: 48px;
+
+    @include on-tablet {
+      padding-bottom: 147px;
+    }
+
+    @include on-desktop-small {
+      padding-bottom: 205px;
+    }
+  }
+
+  &__title {
+    grid-column: 1 / -1;
+    margin-bottom: 32px;
+
+    font-family: Poppins, sans-serif;
+    font-size: 52px;
+    font-weight: 600;
+    line-height: 62.4px;
+    letter-spacing: -2px;
+    text-align: left;
+    color: $header-text-color;
+
+    @include on-tablet {
+      margin-bottom: 24px;
+    }
+
+    @include on-desktop-small {
+      grid-column: 1 / 5;
+      margin-bottom: 32px;
+    }
+
+    &--line-break {
+      display: none;
+
+      @include on-desktop-small {
+        display: block;
+      }
+    }
+  }
+
+  &__slogan {
+    grid-column: 1 / -1;
+    margin-bottom: 72px;
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    color: $header-text-color;
+
+    &--line-break {
+      display: none;
+    }
+
+
+    @include on-tablet {
+      grid-column: 1 / 7;
+      margin-bottom: 56px;
+
+      &--line-break {
+        display: inline-block
+      }
+    }
+
+    @include on-desktop-small {
+      margin-bottom: 83px;
+    }
+  }
+
+  &__button {
+    grid-column: 1 / -1;
+
+    @include on-tablet {
+      grid-column: 1 / 4;
+    }
+  }
+
+  &__slider {
+    margin-inline: -$padding-inline-mobile;
+    height: 390px;
+
+    & > img{
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 30px;
+    }
+
+    @include on-tablet {
+      margin-inline: -$padding-inline-tablet;
+    }
+
+    @include on-desktop-small {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+
+      margin-inline: 0;
+      height: 680px;
+      width: 502px;
+
+      & > img {
+        border-radius: 30px 0;
+      }
+    }
+
+    @include on-desktop {
+      width: 687px;
+    }
+
+    @include on-large-screen {
+      width: 1167px;
+    }
+  }
+
+}
+
+

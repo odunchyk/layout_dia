@@ -1,0 +1,14 @@
+.footer {
+  @include page-grid;
+  @include padding-inline;
+
+  padding-block: 72px 80px;
+  border-radius: 30px 30px 0 0;
+
+  background-color: $footer-background-color;
+  color: $footer-text-color;
+
+  @include on-tablet {
+    padding-top: 180px;
+  }
+}

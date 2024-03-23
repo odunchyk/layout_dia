@@ -1,0 +1,60 @@
+.testimonials {
+  @include padding-inline;
+  
+  padding-bottom: 120px;
+
+  @include on-tablet {
+    padding-bottom: 148px;
+  }
+
+  &__text {
+    margin-bottom: 48px;
+
+    @include on-tablet {
+      margin-bottom: 56px;
+    }
+
+    @include on-desktop-small {
+      margin-bottom: 85px;
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: 16px;
+
+    font-family: Poppins, sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 19.5px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: $main-subtext-color;
+  }
+
+  &__title {
+    font-family: Poppins, sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 48px;
+    text-align: left;
+    color: $main-title-color;
+
+    &--line-break {
+      display: none;
+
+      @include on-tablet {
+        display: inline;
+      }
+    }
+  }
+
+  &__cards-wrap {
+    @include page-grid;
+
+    row-gap: 24px;
+
+    @include on-tablet {
+      row-gap: 30px;
+    }
+  }
+}

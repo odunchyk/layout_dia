@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+}
+
+ul,
+h1,
+h2,
+h3,
+p,
+button,
+input {
+  margin: 0;
+  padding: 0;
+}
+
+span {
+  display: block;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button,
+input,
+textarea {
+  outline: none;
+  border: none;
+}

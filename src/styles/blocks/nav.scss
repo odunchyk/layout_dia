@@ -1,0 +1,27 @@
+.nav {
+  @include page-grid;
+
+  display: none;
+
+  @include on-desktop-small {
+    display: block;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 48px;
+
+    font-family: Poppins, sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 19.5px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+
+  &__link {
+    color: $header-text-color;
+  }
+}

@@ -1,0 +1,14 @@
+.button {
+  display: block;
+
+  border-radius: 8px;
+  background-color: $button-background-color;
+
+  font-family: Poppins, sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 50px;
+  text-align: center;
+  color: $button-text-color;
+
+}
